@@ -1,2 +1,2 @@
 # ClinicLib
-The Final Projekt, WBS Bootcamp 
+The Final Project, WBS Bootcamp 
