@@ -84,6 +84,8 @@
     "whatwg-url": "^11.0.0"
   },
   "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
