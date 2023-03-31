@@ -1,3 +1,29 @@
+/* css navbar */
+.my-clinic-nav{
+  background-color: #153E65!important;
+  height: 120px;
+}
+
+#clinav-bttn {
+  background: none;
+  color:#A3DB00;
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  border: 1px solid #fff;
+  padding: 10px 30px;
+  border-radius: 20px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+#clinav-bttn:hover {
+  background: #A3DB00;
+  color: #fff;
+}
+/* end css navbar */
+
+
 /* css footer */
 #footer {
   background-color: #153E65;
