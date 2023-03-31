@@ -1,9 +1,15 @@
+
+
 /* css navbar */
 .my-clinic-nav{
   background-color: #153E65!important;
   height: 120px;
 }
 
+#basic-navbar-nav{
+  /* show hamburger navbar on mobile   */
+  z-index: 10;
+}
 #clinav-bttn {
   background: none;
   color:#A3DB00;
@@ -22,6 +28,62 @@
   color: #fff;
 }
 /* end css navbar */
+
+/* css hero2  section 2 */
+
+.hero-main-container {
+  display: flex;
+}
+#gigihero {
+  color: #ffffff;
+  background-image: url("images/hero.jpg");
+  height: "500px";
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+}
+#gigihero2 {
+  background-color: #35343496;
+  box-shadow: 10px 5px 5px rgb(10 10 10 / 68%);
+  border-radius: 15px;
+}
+/*change widht of search form */
+#gigihero2 .input-group {
+  width: 47%;
+}
+#gigihero .gigibtn {
+  max-width: 350px;
+}
+
+#gigihero .input-group > .form-control,
+.input-group > .form-floating,
+.input-group > .form-select {
+  height: calc(3.5rem + 2px);
+}
+.input-group .btn {
+  background: #3ccd2f;
+}
+#gigihero .gigibtn {
+  border: 0;
+  background: #ffffff;
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  border: 1px solid #fff;
+  padding: 10px 30px;
+  /* outline: none; */
+  color: #000000;
+  border-radius: 20px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+#gigihero .gigibtn:hover {
+  background: #3ccd2f;
+  color: #fff;
+}
+/* END css hero2  section  */
 
 
 /* css footer */
