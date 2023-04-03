@@ -1,4 +1,19 @@
+/* Media query  */
+@media only screen and (max-width: 768px) {
+  #gigihero .input-group > .form-control,
+  .input-group > .form-floating,
+  .input-group > .form-select {
+    height: initial !important;
+  }
+}
 
+@media only screen and (max-width: 768px) {
+#basic-navbar-nav {
+padding: 1.5em;
+background-color:#153E65;
+}
+}
+/*END  Media query  */
 
 /* css navbar */
 .my-clinic-nav{

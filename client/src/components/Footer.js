@@ -135,7 +135,7 @@ function Footer() {
           <div className="d-flex flex-wrap justify-content-between align-items-center py-3 ">
             <div className="col-md-6 d-flex align-items-center">
               <span className="mb-3 mb-md-0">
-                &copy; 2023 Yasser / Zakaria / Cristian
+                &copy; 2023 Yasser / Kevin / Zakaria / Cristian
               </span>
             </div>
             <p className="nav justify-content-end ">
