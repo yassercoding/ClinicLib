@@ -4,6 +4,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
+import { Link } from 'react-router-dom';
 
 
 export default function Hero() {
@@ -46,9 +47,11 @@ export default function Hero() {
                   Search for a doctor or a clinic
                 </h2>
                 <div class="mx-auto col-10 col-md-8 col-lg-6">
+                <Link to="/news1">
                   <Button variant="btn btn-outline-success" className="gigibtn my-5">
                     Read the latest healthcare news
                   </Button>{" "}
+                  </Link>
                 </div>
               </Row>
             </div>
