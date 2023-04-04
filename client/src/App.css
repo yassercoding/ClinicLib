@@ -88,7 +88,6 @@ background-color:#153E65;
   text-align: center;
   border: 1px solid #fff;
   padding: 10px 30px;
-  /* outline: none; */
   color: #000000;
   border-radius: 20px;
   transition: 0.2s;
@@ -99,6 +98,32 @@ background-color:#153E65;
   color: #fff;
 }
 /* END css hero2  section  */
+
+/*css news section */
+#giginews .card-header{
+  background-color: #153E65;
+  color:#ffffff
+ ;
+}
+#giginews .gigibtn {
+  border: 0;
+  background: #ffffff;
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  border: 1px solid #70ad3b;
+  padding: 10px 30px;
+  color: #000000;
+  border-radius: 20px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+#giginews .gigibtn:hover {
+  background: #3ccd2f;
+  color: #fff;
+}
+/* END css news section */
+
 
 
 /* css footer */
@@ -120,6 +145,7 @@ background-color:#153E65;
   font-size: 3em;
   color: rgb(163, 219, 0);
 }
+
 /* end css footer */
 
 /* css contact */
@@ -327,3 +353,11 @@ background-color:#153E65;
   border-radius: 15px;
 }
 /* end css contact */
+
+
+#footer .nav-item {
+  color:white;
+  text-decoration: none;
+
+}
+/* end css footer */
