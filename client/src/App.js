@@ -9,6 +9,7 @@ import Contact from './components/Contact';
 import Home from './components/Home';
 
 import { Route, Routes } from "react-router-dom";
+import News1 from "./components/News1";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/news1' element={<News1 />} />
       </Routes>
      
       <Footer />
