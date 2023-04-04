@@ -19,8 +19,7 @@ const getAllClinics = async (req, res) => {
 };
 const getClinicById = async (req, res) => {
   try {
-    
-    const clinics = await clinic.find({ _id: req.params.id });
+    const clinics = await Clinic.find({ _id: req.params.id });
     if (clinics.length === 0) {
       res.status(404).json({ message: 'clinic Not Found' });
     }
@@ -31,7 +30,6 @@ const getClinicById = async (req, res) => {
 };
 const updateClinic = async (req, res) => {
   try {
-    
     const updatedClinic = await Clinic.findOneAndUpdate({ _id: req.params.id }, req.body, {
       new: true,
     });
@@ -45,7 +43,6 @@ const updateClinic = async (req, res) => {
 };
 const deleteClinic = async (req, res) => {
   try {
-    
     const deletedClinic = await Clinic.findOneAndDelete({ _id: req.params.id });
     if (!deletedClinic) {
       res.status(404).json({ message: 'Clinic Not Found' });
