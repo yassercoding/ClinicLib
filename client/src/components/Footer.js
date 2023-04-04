@@ -6,6 +6,7 @@ import Logo from "../images/logo_1.png"
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -13,8 +14,9 @@ function Footer() {
       <div className="container">
         <div className="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 align-items-center">
           <div className="col-lg-4 col-md-8 col-xs-12 mb-3">
-
+          <Link to="/">
             <img src={Logo} alt="Logo" className="logo-footer" width="" height="" />
+            </Link>
           </div>
 
           <div className="col-lg-4 col-md-8 col-xs-12 mb-3">
@@ -55,9 +57,10 @@ function Footer() {
           <div className="col-lg-4 col-md-6 col-xs-12 mb-3">
           <h4 className= "mb-4">QUICK NAVIGATION</h4>
             <ul className="nav flex-column">
-              <li className="nav-item mb-2">
+            <Link className="nav-item mb-2" to="/">
                 HOME
-              </li>
+              </Link>
+            
               <li className="nav-item mb-2">
                 DOCTORS
               </li>
@@ -79,14 +82,13 @@ function Footer() {
 
               With Cliniclib, you can easily book appointments and live consultations with your preferred doctors and clinics. Whether you need a routine checkup, a specialist consultation, or urgent medical attention, Cliniclib's user-friendly interface makes it easy to find and book the care you need, when you need it.
               </li>
-              <li className="nav-item mb-2">
-
+              <Link className="nav-item mb-2" to="/about">
                 ABOUT US
-              </li>
-              <li className="nav-item mb-2">
+              </Link>
+              <Link className="nav-item mb-2" to="/contact">
 
                 CONTACT US
-              </li>
+              </Link>
 
 
             </ul>
@@ -135,7 +137,7 @@ function Footer() {
           <div className="d-flex flex-wrap justify-content-between align-items-center py-3 ">
             <div className="col-md-6 d-flex align-items-center">
               <span className="mb-3 mb-md-0">
-                &copy; 2023 Yasser / Zakaria / Cristian
+                &copy; 2023 Yasser / Kevin / Zakaria / Cristian
               </span>
             </div>
             <p className="nav justify-content-end ">
