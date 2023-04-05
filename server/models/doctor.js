@@ -1,14 +1,10 @@
 const mongoose = require('mongoose');
 
-const clinicSchema = new mongoose.Schema(
+const doctorSchema = new mongoose.Schema(
   {
     first_name1: { type: String },
     last_name1: { type: String  },
-    first_name2: { type: String },
-    last_name2: { type: String },
     photo1: {type: String},
-    photo2: {type: String},
-    image1: {type :String},
     address: { type: String,},
     telephonnumber: { type: String},
     field: {type: String}
@@ -16,5 +12,5 @@ const clinicSchema = new mongoose.Schema(
   },
   { timestamps: true },
 );
-const model = mongoose.model('clinic', clinicSchema);
+const model = mongoose.model('doctor', doctorSchema);
 module.exports = model;

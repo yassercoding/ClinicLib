@@ -8,12 +8,37 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Home from './components/Home';
 
-import { Route, Routes } from "react-router-dom";
+import { NavLink, Routes, Route } from "react-router-dom";
+import Clinics from "./components/Clinics";
+import NewClinic from "./components/NewClinic";
+import ClinicDetails from "./components/ClinicDetails";
+import UpdateClinic from "./components/UpdateClinic";
 import News1 from "./components/News1";
 
 
+
 function App() {
-  return (
+  return ( <>
+    <div className="App">
+      <nav>
+        <ul>
+          <li>
+            <NavLink to="/">Home</NavLink>
+          </li>
+          <li>
+            <NavLink to="/clinics/new">New Clinic</NavLink>
+          </li>
+        </ul>
+      </nav>
+
+      <Routes>
+        <Route path="/" element={<Clinics />} />
+         <Route path="/clinics/:id" element={<ClinicDetails />} /> 
+        <Route path="/clinics/new" element={<NewClinic />} />
+        <Route path="/clinics/:id/update" element={<UpdateClinic />} />
+        
+      </Routes>
+    </div>
     <div>
       <ClinicNavbar/>
       <Routes>
@@ -25,6 +50,7 @@ function App() {
      
       <Footer />
     </div>
+    </>
   );
 }
 
