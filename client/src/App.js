@@ -8,7 +8,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Home from './components/Home';
 
-import { Route, Routes } from "react-router-dom";
+
 import { NavLink, Routes, Route } from "react-router-dom";
 import Clinics from "./components/Clinics";
 import NewClinic from "./components/NewClinic";

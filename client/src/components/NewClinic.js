@@ -21,7 +21,7 @@ function NewClinic() {
         last_name1,
         first_name2,
         last_name2,
-        
+       
 
       })
       .then((res) => navigate("/"))
