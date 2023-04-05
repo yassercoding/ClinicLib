@@ -18,6 +18,8 @@ function ClinicNavbar() {
           <Nav.Link href="/clinics">Clinics</Nav.Link>
           <Nav.Link href="/about">About us</Nav.Link>
           <Nav.Link href="/contact">Contact</Nav.Link>
+          <Nav.Link href="/clinics/new">Add Clinic</Nav.Link>
+          <Nav.Link href="/">Add Doctor</Nav.Link>
 
         </Nav>
 

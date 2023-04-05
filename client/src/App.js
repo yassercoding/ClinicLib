@@ -20,17 +20,8 @@ import NewDoctor from "./components/NewDoctor";
 
 
 function App() {
-  return ( <>
-    <div className="App">
-      <nav>
-        <ul>
-
-          <li>
-            <NavLink to="/clinics/new">New Clinic</NavLink>
-          </li>
-        </ul>
-      </nav>
-    </div>
+  return (
+  
     <div>
       <ClinicNavbar/>
       <Routes>
@@ -48,7 +39,7 @@ function App() {
 
       <Footer />
     </div>
-    </>
+  
   );
 }
 
