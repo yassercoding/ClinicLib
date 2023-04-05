@@ -4,25 +4,23 @@ import { useNavigate } from "react-router-dom";
 
 function NewClinic() {
   const navigate = useNavigate();
-  const [first_name1, setfirst_name1] = useState("");
-  const [last_name1, setlast_name1] = useState("");
-  const [first_name2, setfirst_name2] = useState("");
-  const [last_name2, setlast_name2] = useState("");
-  const [photo1, setphoto1] = useState("");
-  const [photo2, setphoto2] = useState("");
-  const [image1, setimage1] = useState("");
-  const [address, setaddress] = useState("");
-  const [telephonnumber, settelephonnumer] = useState();
+  const [name,setName] =useState('')
+  const [specialty,setSpecialty] =useState('')
+  const [address,setAddress] =useState('')
+  const [telNumber,setTelNumber] =useState('')
+  const [description,setDescription] = useState('')
+  const [image,setImage] = useState('')
+
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
       .post(`/api/clinics`, {
-        first_name1,
-        last_name1,
-        first_name2,
-        last_name2,
-       
-
+       name,
+       specialty,
+       address,
+       telNumber,
+       description,
+       image
       })
       .then((res) => navigate("/"))
       .catch((e) => console.log(e));
@@ -32,37 +30,54 @@ function NewClinic() {
       <h2>Add a new clinic</h2>
       <form onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="first_name1">first_name1:</label>
+          <label htmlFor="name">name:</label>
           <input
             type="text"
-            value={first_name1}
-            onChange={(e) => setfirst_name1(e.target.value)}
+            value={name}
+            onChange={(e) => setName(e.target.value)}
           />
         </div>
         <div>
-          <label htmlFor="last_name1">last_name1:</label>
+          <label htmlFor="specialty">specialty:</label>
           <input
             type="text"
-            value={last_name1}
-            onChange={(e) => setlast_name1(e.target.value)}
+            value={specialty}
+            onChange={(e) => setSpecialty(e.target.value)}
           />
         </div>
         <div>
-          <label htmlFor="first_name2">first_name2:</label>
+          <label htmlFor="address">address:</label>
           <input
             type="text"
-            value={first_name2}
-            onChange={(e) => setfirst_name2(e.target.value)}
+            value={address}
+            onChange={(e) => setAddress(e.target.value)}
           />
         </div>
         <div>
-          <label htmlFor="last_name2">last_name2:</label>
+          <label htmlFor="telNumber">telNumber:</label>
           <input
             type="text"
-            value={last_name2}
-            onChange={(e) => setlast_name2(e.target.value)}
+            value={telNumber}
+            onChange={(e) => setTelNumber(e.target.value)}
           />
         </div>
+        <div>
+          <label htmlFor="description">description:</label>
+          <input
+            type="text"
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
+          />
+        </div>
+        <div>
+          <label htmlFor="image">image:</label>
+          <input
+            type="text"
+            value={image}
+            onChange={(e) => setImage(e.target.value)}
+          />
+        </div>
+
         <button>Add Clinic</button>
       </form>
     </div>

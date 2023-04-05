@@ -15,14 +15,14 @@ function ClinicNavbar() {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
           <Nav.Link href="#link">Doctors</Nav.Link>
-          <Nav.Link href="#link">Clinics</Nav.Link>
+          <Nav.Link href="/clinics">Clinics</Nav.Link>
           <Nav.Link href="/about">About us</Nav.Link>
           <Nav.Link href="/contact">Contact</Nav.Link>
-         
+
         </Nav>
 
         <Nav>
-            
+
             <Button
                     variant="btn btn-outline-success"
                     className="mx-4 "

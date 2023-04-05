@@ -22,32 +22,26 @@ function App() {
     <div className="App">
       <nav>
         <ul>
-          <li>
-            <NavLink to="/">Home</NavLink>
-          </li>
+
           <li>
             <NavLink to="/clinics/new">New Clinic</NavLink>
           </li>
         </ul>
       </nav>
-
-      <Routes>
-        <Route path="/" element={<Clinics />} />
-         <Route path="/clinics/:id" element={<ClinicDetails />} /> 
-        <Route path="/clinics/new" element={<NewClinic />} />
-        <Route path="/clinics/:id/update" element={<UpdateClinic />} />
-        
-      </Routes>
     </div>
     <div>
       <ClinicNavbar/>
       <Routes>
       <Route path='/' element={<Home />} />
+      <Route path="/clinics" element={<Clinics />} />
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/news1' element={<News1 />} />
+        <Route path="/clinics/:id" element={<ClinicDetails />} />
+        <Route path="/clinics/new" element={<NewClinic />} />
+        <Route path="/clinics/:id/update" element={<UpdateClinic />} />
       </Routes>
-     
+
       <Footer />
     </div>
     </>
