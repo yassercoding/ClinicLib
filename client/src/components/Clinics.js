@@ -15,29 +15,28 @@ function Clinics() {
   return (
     <div>
       {clinics?.map((clinic) => (
-        
-     
+
+
 <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src={ clinic.image1} />
       <Card.Body>
-        <Card.Title>{clinic.field} Clinic</Card.Title>
+        <Card.Title>{clinic.name}</Card.Title>
+        <Card.Subtitle>{clinic.specialty}</Card.Subtitle>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+         {clinic.address}
         </Card.Text>
+        <Card.Text>
+         {clinic.description}
+        </Card.Text>
+        <Card.Text>
+         {clinic.telNumber}
+        </Card.Text>
+        <img src={clinic.image} alt={clinic.name}/>
       </Card.Body>
-      <ListGroup className="list-group-flush">
-        <ListGroup.Item>Dr. {clinic.first_name1 } {clinic.last_name1 }</ListGroup.Item>
-        <ListGroup.Item>Dr. {clinic.first_name2 } {clinic.last_name2 }</ListGroup.Item>
-        <ListGroup.Item>{clinic.adress }</ListGroup.Item>
-      </ListGroup>
-      <Card.Body>
-        <Card.Link href="#">Card Link</Card.Link>
-        <Card.Link href="#">Another Link</Card.Link>
-      </Card.Body>
-    </Card> 
-    
-    ))} 
+
+    </Card>
+
+    ))}
 
     </div>
   );
