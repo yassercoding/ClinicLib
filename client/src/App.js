@@ -14,6 +14,8 @@ import NewClinic from "./components/NewClinic";
 import ClinicDetails from "./components/ClinicDetails";
 import UpdateClinic from "./components/UpdateClinic";
 import News1 from "./components/News1";
+import Doctors from "./components/Doctors";
+import NewDoctor from "./components/NewDoctor";
 
 
 
@@ -34,12 +36,14 @@ function App() {
       <Routes>
       <Route path='/' element={<Home />} />
       <Route path="/clinics" element={<Clinics />} />
+      <Route path="/Doctors" element={<Doctors />} />
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/news1' element={<News1 />} />
         <Route path="/clinics/:id" element={<ClinicDetails />} />
         <Route path="/clinics/new" element={<NewClinic />} />
         <Route path="/clinics/:id/update" element={<UpdateClinic />} />
+        <Route path="/doctors/new" element={<NewDoctor />} />
       </Routes>
 
       <Footer />
