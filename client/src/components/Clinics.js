@@ -1,8 +1,8 @@
 import Card from 'react-bootstrap/Card';
-import ListGroup from 'react-bootstrap/ListGroup';
+import Button from 'react-bootstrap/esm/Button';
 import { useState, useEffect } from "react";
 import axios from "../axiosinstance";
-import { Link } from "react-router-dom";
+
 function Clinics() {
   const [clinics, setClinics] = useState([]);
   useEffect(() => {
@@ -13,29 +13,39 @@ function Clinics() {
   }, []);
 
   return (
-    <div>
-      {clinics?.map((clinic) => (
+    
+    
+    <div className='container'>
+        <h1 className='text-center my-3'> Clinics</h1>
+        
+      {clinics.map((clinic) => (
 
-
-<Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={ clinic.image1} />
+<>
+<Card>
+      <Card.Header><h3>{clinic.name}</h3></Card.Header>
+      
       <Card.Body>
-        <Card.Title>{clinic.name}</Card.Title>
-        <Card.Subtitle>{clinic.specialty}</Card.Subtitle>
+        <Card.Title>Specialty - {clinic.specialty}</Card.Title>
         <Card.Text>
-         {clinic.address}
+        {clinic.description}
         </Card.Text>
+        <Card.Title>Adress</Card.Title>
         <Card.Text>
-         {clinic.description}
+        {clinic.address}
         </Card.Text>
+        <Card.Title>Phone</Card.Title>
         <Card.Text>
-         {clinic.telNumber}
+        {clinic.telNumber}
+        
         </Card.Text>
-        <img src={clinic.image} alt={clinic.name}/>
+        < Button href={clinic.url} target='_blank'>Visit clinic's website</Button>
+        
       </Card.Body>
-
+      <Card.Img variant="bottom" src={ clinic.image} />
     </Card>
+<br/>
 
+</>
     ))}
 
     </div>

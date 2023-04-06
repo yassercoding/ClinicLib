@@ -7,7 +7,8 @@ const clinicSchema = new mongoose.Schema(
     address: { type: String},
     telNumber: { type: String},
     description: {type: String},
-    image: {type: String}
+    image: {type: String},
+    url: {type: String}
   },
   { timestamps: true },
 );
