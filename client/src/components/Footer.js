@@ -67,12 +67,12 @@ function Footer() {
               <Link className="nav-item mb-2" to="/clinics/new">
                 ADD CLINIC
                 </Link>
-              <li className="nav-item mb-2">
+              <Link className="nav-item mb-2" to="/doctors">
                 DOCTORS
-              </li>
-              <li className="nav-item mb-2">
+              </Link>
+              <Link className="nav-item mb-2" to="/doctors/new">
                 ADD DOCTOR
-              </li>
+              </Link>
 
               <li className="nav-item mb-2">
                HEALTH NEWS
