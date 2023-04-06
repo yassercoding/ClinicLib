@@ -22,7 +22,7 @@ function NewDoctor() {
        description,
        image
       })
-      .then((res) => navigate("/Doctors"))
+      .then((res) => navigate("/doctors"))
       .catch((e) => console.log(e));
   };
   return (

@@ -14,12 +14,12 @@ function ClinicNavbar() {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
-          <Nav.Link href="/Doctors">Doctors</Nav.Link>
+          <Nav.Link href="/doctors">Doctors</Nav.Link>
           <Nav.Link href="/clinics">Clinics</Nav.Link>
           <Nav.Link href="/about">About us</Nav.Link>
           <Nav.Link href="/contact">Contact</Nav.Link>
           <Nav.Link href="/clinics/new">Add Clinic</Nav.Link>
-          <Nav.Link href="/">Add Doctor</Nav.Link>
+          <Nav.Link href="/doctors/new">Add Doctor</Nav.Link>
 
         </Nav>
 
