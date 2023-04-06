@@ -10,6 +10,7 @@ function NewClinic() {
   const [telNumber,setTelNumber] =useState('')
   const [description,setDescription] = useState('')
   const [image,setImage] = useState('')
+  const [url,setUrl] = useState('')
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -20,7 +21,8 @@ function NewClinic() {
        address,
        telNumber,
        description,
-       image
+       image,
+       url
       })
       .then((res) => navigate("/"))
       .catch((e) => console.log(e));
@@ -76,7 +78,16 @@ function NewClinic() {
             value={image}
             onChange={(e) => setImage(e.target.value)}
           />
+          
         </div>
+        <div>
+          <label htmlFor="url">url:</label>
+          <input
+            type="text"
+            value={url}
+            onChange={(e) => setUrl(e.target.value)}
+          />
+          </div>
 
         <button>Add Clinic</button>
       </form>
