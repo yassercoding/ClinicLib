@@ -125,7 +125,12 @@ background-color:#153E65;
 /* END css news section */
 
 
+/*  css doctors listing page */
+#gigidoctors .card-img, .card-img-bottom, .card-img-top {
+  width: 50%;
+} 
 
+/*  END css doctors listing page */
 
 
 /* css contact */
