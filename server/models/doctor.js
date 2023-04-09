@@ -6,6 +6,7 @@ const doctorSchema = new mongoose.Schema(
     name: { type: String },
     specialty:{type: String},
     clinicId:{type:mongoose.Types.ObjectId,ref:'clinic'},
+    address: { type: String},
     telNumber: { type: String},
     description: {type: String},
     image: {type: String}
