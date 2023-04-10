@@ -26,59 +26,82 @@ function NewDoctor() {
       .catch((e) => console.log(e));
   };
   return (
-    <div>
-      <h2>Add a new Doctor</h2>
+    <div className="container my-5 ">
+      <div className="row">
+        <div className="col-sm-12 green-top">ADD NEW DOCTOR</div>
+      </div>
+      
       <form onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">name:</label>
+
+      <div className="row">
+      <div className="col-12 col-md-6 col-lg-6 form-color">
+      <div className="mb-3 p-5">
+        
+          <label htmlFor="name"><h5 className="mb-3">Name</h5></label><br/>
           <input
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
-        </div>
-        <div>
-          <label htmlFor="specialty">specialty:</label>
+        <br/>
+
+        
+          <label htmlFor="specialty"><h5 className="my-3">Medical specialty</h5></label><br/>
           <input
             type="text"
             value={specialty}
             onChange={(e) => setSpecialty(e.target.value)}
           />
-        </div>
-        <div>
-          <label htmlFor="address">address:</label>
+        <br/>
+
+        
+          <label htmlFor="address"><h5 className="my-3">Address</h5></label><br/>
           <input
             type="text"
             value={address}
             onChange={(e) => setAddress(e.target.value)}
           />
-        </div>
-        <div>
-          <label htmlFor="telNumber">telNumber:</label>
+        
+      </div>
+      </div>
+      <div className="col-12 col-md-6 col-lg-6 form-color">
+      <div className="mb-3 p-5">
+        
+          <label htmlFor="telNumber"><h5 className="mb-3">Tel number</h5></label><br/>
           <input
             type="text"
             value={telNumber}
             onChange={(e) => setTelNumber(e.target.value)}
           />
-        </div>
-        <div>
-          <label htmlFor="description">description:</label>
+        <br/>
+        
+          <label htmlFor="description"><h5 className="my-3">Description</h5></label><br/>
           <input
             type="text"
             value={description}
             onChange={(e) => setDescription(e.target.value)}
           />
-        </div>
-        <div>
-          <label htmlFor="image">image:</label>
+        <br/>
+        
+          <label htmlFor="image"><h5 className="my-3">Image</h5></label><br/>
           <input
             type="text"
             value={image}
             onChange={(e) => setImage(e.target.value)}
           />
         </div>
+      
 
-        <button>Add Doctor</button>
+        
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-sm-12 green-top">
+
+        <button >Add Doctor</button>
+        </div>
+        
+      </div>
       </form>
     </div>
   );
