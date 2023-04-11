@@ -5,7 +5,7 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 
 import "leaflet/dist/leaflet.css";
 function Contact() {
-  const position = [52.457147005391505, 13.540078287927017];
+  const position = [52.45795447690074, 13.539913779520898];
   const markerIcon = new L.Icon({
     iconUrl:
       "https://www.ockert-cnc.de/wp-content/uploads/2016/12/map-marker-icon.png",
@@ -28,7 +28,7 @@ function Contact() {
                 <div className="address">
                   <i className="bi bi-geo-alt"></i>
                   <h4>Location:</h4>
-                  <p>Lorenzweg 5, 12099 Berlin</p>
+                  <p>Weiskopffstraße 16, 12459 Berlin</p>
                 </div>
 
                 <div className="email">
@@ -50,7 +50,8 @@ function Contact() {
                   <TileLayer url="https://api.maptiler.com/maps/basic-v2/256/{z}/{x}/{y}.png?key=LjeASTEOm5W62yk97NZq" />
                   <Marker position={position} icon={markerIcon}>
                     <Popup>
-                      Lorenzweg 5, 12099 Berlin <br /> WBS Coding School.
+                    Weiskopffstraße 16, 12459 Berlin
+                    <br /> WBS Coding School.
                     </Popup>
                   </Marker>
                 </MapContainer>
