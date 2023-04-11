@@ -40,19 +40,18 @@ function ClinicNavbar({ isLoggedin, setIsLoggedin }) {
           <Nav.Link href="/doctors/new">Add Doctor</Nav.Link>
 
         </Nav>
-
         <Nav>
         {user ? (
             <div className="header-user">
-              <p>Hello: {user.username}</p>
-              <button onClick={handleLogout}>Logout</button>
+              <h6 className='text-white'>Hello {user.username}</h6>
+              <Button variant="btn btn-success" onClick={handleLogout}>Logout</Button>
             </div>
           ) : (
-            <div className="">
+            <div className="gigi-spread">
           <Link to="/login">
             <Button
                     variant="btn btn-outline-success"
-                    className="mx-4 "
+                    className=""
                     id="clinav-bttn">
                     Log in
                   </Button>
@@ -60,7 +59,7 @@ function ClinicNavbar({ isLoggedin, setIsLoggedin }) {
                   <Link to="register">
                   <Button
                     variant="btn btn-outline-success"
-                    className="mx-4 "
+                    className=" "
                     id="clinav-bttn">
                     Sign up
                   </Button>
