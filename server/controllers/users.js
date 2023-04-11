@@ -12,7 +12,7 @@ const register = async (req, res) => {
       email: newUser.email,
     };
     const userToken = jwt.sign(payload, JWT_SECRET);
-    const options = { httpOnly: true, expires: new Date(Date.now() + 9000000) };
+    const options = { httpOnly: true, expires: new Date(Date.now() + 900000) };
     console.log('JWT TOKEN', userToken);
     res.status(201).cookie('userToken', userToken, options).json({ user: payload });
   } catch (error) {
@@ -36,7 +36,7 @@ const login = async (req, res) => {
           email: userDocument.email,
         };
         const userToken = jwt.sign(payload, JWT_SECRET);
-        const options = { httpOnly: true, expires: new Date(Date.now() + 9000000) };
+        const options = { httpOnly: true, expires: new Date(Date.now() + 90000000) };
         console.log('JWT TOKEN', userToken);
         res.cookie('userToken', userToken, options).json({ user: payload });
       }

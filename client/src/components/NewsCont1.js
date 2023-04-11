@@ -10,8 +10,8 @@ function NewsCont1() {
     <Card>
     <Card.Header>News of the day</Card.Header>
 
-    <div class="row align-items-center">
-    <div class="col">
+    <div className="row align-items-center">
+    <div className="col">
     <Card.Body>
       <Card.Title className='mb-3'>Lithium in Water Supply Linked to Uptick in Autism Risk</Card.Title>
       <Card.Text className='pb-3'>
@@ -22,7 +22,7 @@ function NewsCont1() {
       </Link>
     </Card.Body>
     </div>
-    <div class="col">
+    <div className="col">
     <img src={INews1} className="img-fluid" alt="" />
     </div>   
 
