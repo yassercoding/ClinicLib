@@ -27,9 +27,7 @@ function App() {
   const [isLoggedin, setIsLoggedin] = useState(false);
   return (
     <div className="App">
-  <Header isLoggedin={isLoggedin} setIsLoggedin={setIsLoggedin} />
-    
-      <ClinicNavbar/>
+      <ClinicNavbar isLoggedin={isLoggedin} setIsLoggedin={setIsLoggedin}/>
       <Routes>
       <Route path='/' element={<Home />} />
       <Route path="/clinics" element={<Clinics />} />
@@ -45,8 +43,6 @@ function App() {
         <Route path="/register" element={<Register setIsLoggedin={setIsLoggedin} />} /> 
         <Route path="/doctors/:id" element={<DoctorsDetails />} />
         <Route path="/clinics/:id" element={<ClinicDetailsGigi />} />
-        {/*<Route path="/login" element={<Login setIsLoggedin={setIsLoggedin} />} /> */}
-        {/*<Route path="/register" element={<Register setIsLoggedin={setIsLoggedin} />} /> */}
       </Routes>
 
       <Footer />
