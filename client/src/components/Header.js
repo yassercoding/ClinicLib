@@ -31,11 +31,11 @@ function Header({ isLoggedin, setIsLoggedin }) {
           ) : (
             <div className="header-user">
               <NavLink className="nav-link" to={'/login'}>
-                Login
+                
               </NavLink>
               <span> | </span>
               <NavLink className="nav-link" to={'/register'}>
-                Register
+                
               </NavLink>
             </div>
           )}
