@@ -5,7 +5,7 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 
 import "leaflet/dist/leaflet.css";
 function Contact() {
-  const position = [52.45588949917658, 13.389077598470479];
+  const position = [52.457147005391505, 13.540078287927017];
   const markerIcon = new L.Icon({
     iconUrl:
       "https://www.ockert-cnc.de/wp-content/uploads/2016/12/map-marker-icon.png",
