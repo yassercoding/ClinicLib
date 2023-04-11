@@ -1,12 +1,30 @@
-import React from 'react'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Logo from "../images/logo_1.png"
 import Button from 'react-bootstrap/esm/Button';
-
-
-function ClinicNavbar() {
+import { Link } from 'react-router-dom';
+import axios from '../axiosinstance';
+import { useState, useEffect } from 'react';
+function ClinicNavbar({ isLoggedin, setIsLoggedin }) {
+  const [user, setUser] = useState(null);
+  useEffect(() => {
+    axios
+      .get('/auth/loggedin-user')
+      .then(res => {
+        setUser(res.data);
+        setIsLoggedin(true);
+      })
+      .catch(err => {
+        console.log(err.response.data);
+      });
+  }, [isLoggedin]);
+  const handleLogout = () => {
+    axios.post('/auth/logout', {}).then(res => {
+      console.log('Logged out');
+      window.location.reload();
+    });
+  };
   return (
     <Navbar bg="dark" variant="dark" expand="lg" className='my-clinic-nav'>
     <Container>
@@ -24,20 +42,32 @@ function ClinicNavbar() {
         </Nav>
 
         <Nav>
-
+        {user ? (
+            <div className="header-user">
+              <p>Hello: {user.username}</p>
+              <button onClick={handleLogout}>Logout</button>
+            </div>
+          ) : (
+            <div className="">
+          <Link to="/login">
             <Button
                     variant="btn btn-outline-success"
                     className="mx-4 "
                     id="clinav-bttn">
                     Log in
                   </Button>
-
+                  </Link>
+                  <Link to="register">
                   <Button
                     variant="btn btn-outline-success"
                     className="mx-4 "
                     id="clinav-bttn">
                     Sign up
                   </Button>
+                  </Link>
+            </div>
+          )}
+           
           </Nav>
 
 

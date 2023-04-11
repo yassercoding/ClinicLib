@@ -33,7 +33,7 @@ The study, published April 3 in JAMA Pediatrics, is believed to be the first to 
   <p>In addition to Denmark’s comprehensive civil databases that have proven to be valuable resources for public health researchers, several other factors made Denmark ideal for this study. Denmark’s consumption of bottled water ranks among the lowest in Europe, meaning Danes largely rely on tap water.</p>
   <p>The country also has a robust system for measuring trace metals and other contaminants in their water supply. Ritz said lithium levels in Denmark’s water, when compared to other countries, are likely in the low to moderate range.</p>
 
-  <div class="alert alert-warning" role="alert">
+  <div className="alert alert-warning" role="alert">
 <strong>Author:</strong> Jason Millman<br/>
 <strong>Source:</strong> UCLA<br/>
 <strong>Contact:</strong> Jason Millman – UCLA<br/>
