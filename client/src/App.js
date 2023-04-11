@@ -41,15 +41,12 @@ function App() {
         <Route path="/clinics/new" element={<NewClinic />} />
         <Route path="/clinics/:id/update" element={<UpdateClinic />} />
         <Route path="/doctors/new" element={<NewDoctor />} />
-<<<<<<< HEAD
         <Route path="/login" element={<Login setIsLoggedin={setIsLoggedin} />} /> 
         <Route path="/register" element={<Register setIsLoggedin={setIsLoggedin} />} /> 
-=======
         <Route path="/doctors/:id" element={<DoctorsDetails />} />
         <Route path="/clinics/:id" element={<ClinicDetailsGigi />} />
         {/*<Route path="/login" element={<Login setIsLoggedin={setIsLoggedin} />} /> */}
         {/*<Route path="/register" element={<Register setIsLoggedin={setIsLoggedin} />} /> */}
->>>>>>> main
       </Routes>
 
       <Footer />
