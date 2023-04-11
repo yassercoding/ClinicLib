@@ -5,6 +5,7 @@
   .input-group > .form-select {
     height: initial !important;
   }
+  
 }
 
 @media only screen and (max-width: 1000px) {
@@ -12,13 +13,23 @@
 padding: 1.5em;
 background-color:#153E65;
 }
+.gigi-spread {
+  flex-direction:column;
+  gap: 0px!important;
 }
+}
+
+
 /*END  Media query  */
 
 /* css navbar */
 .my-clinic-nav{
   background-color: #153E65!important;
   height: 120px;
+}
+.gigi-spread {
+  display:flex;
+  gap: 15px;
 }
 
 #basic-navbar-nav{
