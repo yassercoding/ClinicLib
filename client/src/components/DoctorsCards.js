@@ -1,6 +1,5 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/esm/Button';
 import { useState, useEffect } from "react";
 import axios from "../axiosinstance";
 import { Container } from "react-bootstrap";
@@ -32,7 +31,7 @@ function DoctorsCards() {
                             className="m-2 border-0 "
                             key={doctor.id}>
                                 <Link
-                                        to={`/doctors/`}
+                                        to={`/doctors/${doctor._id}`}
                                         style={{ textDecoration: "none" }}
                                         className="text-dark"
                                         >
@@ -41,7 +40,7 @@ function DoctorsCards() {
                             <Card.Body  className='text-bg-light'>
                                 <Card.Title>
                                     <Link
-                                        to={`/doctors/`}
+                                        to={`/doctors/${doctor._id}`}
                                         style={{ textDecoration: "none" }}
                                         className="text-dark"
                                         >

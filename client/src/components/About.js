@@ -1,8 +1,9 @@
 import React from "react";
-
+import { Container } from "react-bootstrap";
 function About() {
   return (
-    <>
+    <Container>
+    
       <header class="masthead">
         <p class="masthead-intro"></p>
         <h1 class="masthead-heading">
@@ -37,8 +38,8 @@ function About() {
 
         <p>
           Dr. Christian and Dr. Kevin are highly skilled and experienced physicians who are dedicated to providing the highest quality of care to their patients.
-          As physicians,<br>Dr. Christian and Dr. Kevin are known for their compassion, expertise, and commitment to improving the health and well-being of their patients.</br>
-          <br>Dr. Christian and Dr. Kevin bring a wealth of knowledge and experience to their practice, and are respected members of the medical community.</br>
+          As physicians,<br/>Dr. Christian and Dr. Kevin are known for their compassion, expertise, and commitment to improving the health and well-being of their patients.<br/>
+          Dr. Christian and Dr. Kevin bring a wealth of knowledge and experience to their practice, and are respected members of the medical community.<br/>
         </p>
 
         <h1>
@@ -49,7 +50,7 @@ function About() {
           him and our <strong>board director</strong> and <strong>CEO Zakaria</strong>  founded this company from the ground up with with years of hard work and dedication to make this company the very best
         </p>
       </section>
-    </>
+    </Container>
   );
 }
 

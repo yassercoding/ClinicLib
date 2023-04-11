@@ -31,7 +31,7 @@ function ClinicsCards() {
                             className="m-2 border-0 "
                             key={clinic.id}>
                                 <Link
-                                        to={`/clinics/`}
+                                        to={`/clinics/${clinic._id}`}
                                         style={{ textDecoration: "none" }}
                                         className="text-dark"
                                         >
@@ -40,7 +40,7 @@ function ClinicsCards() {
                             <Card.Body  className='text-bg-light'>
                                 <Card.Title>
                                     <Link
-                                        to={`/clinics/`}
+                                        to={`/clinics/${clinic._id}`}
                                         style={{ textDecoration: "none" }}
                                         className="text-dark"
                                         >
