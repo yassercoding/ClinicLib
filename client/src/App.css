@@ -7,7 +7,7 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
 #basic-navbar-nav {
 padding: 1.5em;
 background-color:#153E65;
@@ -125,6 +125,40 @@ background-color:#153E65;
 /* END css news section */
 
 
+/*  css doctors listing page */
+#gigidoctors .card-img, .card-img-bottom {
+  width: 50%;
+}
+
+/*  END css doctors listing page */
+
+/*  css doctors card */
+#gigicards {
+  margin-top: 2rem;
+}
+
+/*  END css doctors card */
+
+/* css add doctor & clinic */
+.green-top {
+  background-color: #70ad3b;
+  font-family: sans-serif;
+  color: white;
+  text-align: start;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 18px;
+}
+.form-color {
+  background-color: rgb(248, 248, 248);
+  font-family: sans-serif;
+  color: #2ab833;
+  text-align: start;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+/* END css add doctor & clinic */
 
 
 

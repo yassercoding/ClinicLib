@@ -38,7 +38,7 @@ function Clinics() {
         {clinic.telNumber}
         
         </Card.Text>
-        < Button href={clinic.url} target='_blank'>Visit clinic's website</Button>
+        < Button variant="success" href={clinic.url} target='_blank'>Visit clinic's website</Button>
         
       </Card.Body>
       <Card.Img variant="bottom" src={ clinic.image} />

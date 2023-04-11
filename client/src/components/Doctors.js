@@ -1,8 +1,8 @@
 import Card from 'react-bootstrap/Card';
-import ListGroup from 'react-bootstrap/ListGroup';
+import Button from 'react-bootstrap/esm/Button';
 import { useState, useEffect } from "react";
 import axios from "../axiosinstance";
-import { Link } from "react-router-dom";
+
 function Doctors() {
   const [doctors, setDoctors] = useState([]);
   useEffect(() => {
@@ -13,29 +13,39 @@ function Doctors() {
   }, []);
 
   return (
-    <div>
-      {doctors?.map((doctor) => (
+    
+    
+    <div className='container'>
+        <h1 className='text-center my-3'>Doctors</h1>
+        
+      {doctors.map((doctor) => (
 
-
-<Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={ doctor.image1} />
+<>
+<Card id='gigidoctors'>
+      <Card.Header><h3>{doctor.name}</h3></Card.Header>
+      
       <Card.Body>
-        <Card.Title>{doctor.name}</Card.Title>
-        <Card.Subtitle>{doctor.specialty}</Card.Subtitle>
+        <Card.Title>Specialty - {doctor.specialty}</Card.Title>
         <Card.Text>
-         {doctor.address}
+        {doctor.description}
         </Card.Text>
+        <Card.Title>Adress</Card.Title>
         <Card.Text>
-         {doctor.description}
+        {doctor.address}
         </Card.Text>
+        <Card.Title>Phone</Card.Title>
         <Card.Text>
-         {doctor.telNumber}
+        {doctor.telNumber}
+        
         </Card.Text>
-        <img src={doctor.image} alt={doctor.name}/>
+        < Button variant="success" href={doctor.url} target='_blank'>Book an appointment</Button>
+        
       </Card.Body>
-
+      <Card.Img className="img-thumbnail" src={ doctor.image} />
     </Card>
+<br/>
 
+</>
     ))}
 
     </div>
