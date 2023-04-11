@@ -8,7 +8,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Home from './components/Home';
 
-import { NavLink, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Clinics from "./components/Clinics";
 import NewClinic from "./components/NewClinic";
 import ClinicDetails from "./components/ClinicDetails";
@@ -20,6 +20,8 @@ import Header from './components/Header';
 import Login from './components/Login';
 import Register from './components/Register';
 import { useState } from 'react';
+import DoctorsDetails from "./components/DoctorDetails";
+import ClinicDetailsGigi from "./components/ClinicDetailsGigi";
 
 function App() {
   const [isLoggedin, setIsLoggedin] = useState(false);
@@ -35,12 +37,19 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/news1' element={<News1 />} />
-        <Route path="/clinics/:id" element={<ClinicDetails />} />
+        {/*<Route path="/clinics/:id" element={<ClinicDetails />} />*/}
         <Route path="/clinics/new" element={<NewClinic />} />
         <Route path="/clinics/:id/update" element={<UpdateClinic />} />
         <Route path="/doctors/new" element={<NewDoctor />} />
+<<<<<<< HEAD
         <Route path="/login" element={<Login setIsLoggedin={setIsLoggedin} />} /> 
         <Route path="/register" element={<Register setIsLoggedin={setIsLoggedin} />} /> 
+=======
+        <Route path="/doctors/:id" element={<DoctorsDetails />} />
+        <Route path="/clinics/:id" element={<ClinicDetailsGigi />} />
+        {/*<Route path="/login" element={<Login setIsLoggedin={setIsLoggedin} />} /> */}
+        {/*<Route path="/register" element={<Register setIsLoggedin={setIsLoggedin} />} /> */}
+>>>>>>> main
       </Routes>
 
       <Footer />

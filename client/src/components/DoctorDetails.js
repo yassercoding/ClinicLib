@@ -2,14 +2,15 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/esm/Button';
 import { useState, useEffect } from "react";
 import axios from "../axiosinstance";
-import { Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
-function Doctors() {
-  const [doctors, setDoctors] = useState([]);
+function DoctorsDetails() {
+  const [doctor, setDoctor] = useState([]);
+  const {id} = useParams();
   useEffect(() => {
     axios
-      .get(`/api/doctors`)
-      .then((res) => setDoctors(res.data))
+      .get(`/api/doctors/${id}`)
+      .then((res) => setDoctor(res.data))
       .catch((e) => console.log(e));
   }, []);
 
@@ -17,19 +18,15 @@ function Doctors() {
     
     
     <div className='container'>
-        <h1 className='text-center my-3'>Doctors</h1>
+        <br/>
+        <div className="col-sm-12 green-top"><h1 className='text-center my-3'>Get to know your doctor</h1></div>
         
-      {doctors.map((doctor) => (
+      
 
 <>
 <Card id='gigidoctors'>
-<Link
-      to={`/doctors/${doctor._id}`}
-      style={{ textDecoration: "none" }}
-       className="text-dark"
-        >
-      <Card.Header><h3>{doctor.name}</h3></Card.Header>
-      </Link>
+      <Card.Header><h2 className=' my-3'>{doctor.name}</h2></Card.Header>
+      
       <Card.Body>
         <Card.Title>Specialty - {doctor.specialty}</Card.Title>
         <Card.Text>
@@ -47,23 +44,16 @@ function Doctors() {
         < Button variant="success" href={doctor.url} target='_blank'>Book an appointment</Button>
         
       </Card.Body>
-
-      <Link
-           to={`/doctors/${doctor._id}`}
-                                        style={{ textDecoration: "none" }}
-                                        className="text-dark"
-                                        >
-
       <Card.Img className="img-thumbnail" src={ doctor.image} />
-      </Link>
+      <div className="col-sm-12 green-top"><h1 className='text-center my-1'>ClinicLib</h1></div>
     </Card>
 <br/>
 
 </>
-    ))}
+   
 
     </div>
   );
 }
 
-export default Doctors;
+export default DoctorsDetails;
