@@ -3,6 +3,7 @@ import Button from 'react-bootstrap/esm/Button';
 import { useState, useEffect } from "react";
 import axios from "../axiosinstance";
 import { Link } from 'react-router-dom';
+import Calendar from './Calendar';
 
 function Doctors() {
   const [doctors, setDoctors] = useState([]);
@@ -44,7 +45,10 @@ function Doctors() {
         {doctor.telNumber}
         
         </Card.Text>
-        < Button variant="success" href={doctor.url} target='_blank'>Book an appointment</Button>
+
+       
+
+        < Button variant="success" href={`/doctors/${doctor._id}`} >Book an appointment</Button>
         
       </Card.Body>
 
