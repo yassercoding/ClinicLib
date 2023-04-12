@@ -66,7 +66,7 @@ function ClinicNavbar({ isLoggedin, setIsLoggedin }) {
                   </Link>
             </div>
           )}
-           
+
           </Nav>
 
 
