@@ -1,17 +1,11 @@
 import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
+import Button from 'react-bootstrap/esm/Button';
 import { useState, useEffect } from "react";
 import axios from "../axiosinstance";
 import { useParams } from 'react-router-dom';
 import Calendar from './Calendar';
-import Modal from 'react-bootstrap/Modal';
 
 function DoctorsDetails() {
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-
   const [doctor, setDoctor] = useState([]);
   const {id} = useParams();
   useEffect(() => {
@@ -51,26 +45,13 @@ function DoctorsDetails() {
         <Card.Title>Availability</Card.Title>
         <Calendar />
         <br/>
-        < Button variant="success" onClick={handleShow} >Book an appointment</Button>
+        < Button variant="success" onClick={()=> alert('Your appointment is confirmed')} >Book an appointment</Button>
         
       </Card.Body>
       <Card.Img className="img-thumbnail" src={ doctor.image} />
       <div className="col-sm-12 green-top"><h1 className='text-center my-1'>ClinicLib</h1></div>
     </Card>
 <br/>
-
-<Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
-          <Modal.Title className='text-success'><h3>Appointment confirmation</h3></Modal.Title>
-        </Modal.Header>
-        <Modal.Body><h6><strong>Whaattt, your appointment is confirmed!</strong></h6></Modal.Body>
-        <Modal.Footer>
-          <Button variant="success" onClick={handleClose}>
-            Close
-          </Button>
-          
-        </Modal.Footer>
-      </Modal>
 
 </>
    
