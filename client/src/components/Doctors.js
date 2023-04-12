@@ -48,7 +48,7 @@ function Doctors() {
 
        
 
-        < Button variant="success" href={`/doctors/${doctor._id}`} >Book an appointment</Button>
+        < Button variant="success" href={`/doctors/${doctor._id}`} >See doctor's profile</Button>
         
       </Card.Body>
 

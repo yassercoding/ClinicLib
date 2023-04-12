@@ -13,6 +13,7 @@ function Home() {
     <NewsCont1 />
     <ClinicsCards />
     
+    
     </div>
   )
 }
