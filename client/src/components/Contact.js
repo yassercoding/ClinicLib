@@ -40,7 +40,7 @@ function Contact() {
                 <div className="phone">
                   <i className="bi bi-phone"></i>
                   <h4>Call:</h4>
-                  <p>+49 177 don't call me 000</p>
+                  <p><strong>+49 177 don't call me 000</strong></p>
                 </div>
                 <MapContainer
                   center={position}
