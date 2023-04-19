@@ -33,7 +33,7 @@ function Contact() {
 
                 <div className="email">
                   <i className="bi bi-envelope"></i>
-                  <h4>Email:</h4>
+                  <h4><strong>Email:</strong></h4>
                   <p><strong>Clinclib@drugs.com</strong></p>
                 </div>
 
