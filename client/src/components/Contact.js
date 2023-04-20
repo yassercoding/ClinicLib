@@ -27,7 +27,7 @@ function Contact() {
               <div className="info">
                 <div className="address">
                   <i className="bi bi-geo-alt"></i>
-                  <h4>Location:</h4>
+                  <h4><strong>Location:</strong></h4>
                   <p>Weiskopffstraße 16, 12459 Berlin</p>
                 </div>
 
