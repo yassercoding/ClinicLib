@@ -51,7 +51,7 @@ function Contact() {
                   <Marker position={position} icon={markerIcon}>
                     <Popup><strong>
                     Weiskopffstraße 16, 12459 Berlin</strong>
-                    <br /> WBS Coding School.
+                    <br /> <strong>WBS Coding School.</strong>
                     </Popup>
                   </Marker>
                 </MapContainer>
