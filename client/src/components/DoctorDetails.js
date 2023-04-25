@@ -24,18 +24,18 @@ function DoctorsDetails() {
   }, []);
 
   return (
-    
-    
+
+
     <div className='container'>
         <br/>
         <div className="col-sm-12 green-top"><h1 className='text-center my-3'>Get to know your doctor</h1></div>
-        
-      
+
+
 
 <>
 <Card id='gigidoctors'>
       <Card.Header><h2 className=' my-3'>{doctor.name}</h2></Card.Header>
-      
+
       <Card.Body>
         <Card.Title><ClipboardPlus color="green" /> Specialty - {doctor.specialty}</Card.Title>
         <Card.Text>
@@ -48,13 +48,13 @@ function DoctorsDetails() {
         <Card.Title><Telephone color="green" /> Phone number</Card.Title>
         <Card.Text>
         {doctor.telNumber}
-        
+
         </Card.Text>
         <Card.Title> <CalendarRange color="green" /> Availability</Card.Title>
         <Calendar />
         <br/>
         < Button variant="success" onClick={handleShow} ><Bookmark /> Book an appointment</Button>
-        
+       
       </Card.Body>
       <Card.Img className="img-thumbnail" src={ doctor.image} />
       <div className="col-sm-12 green-top"><h1 className='text-center my-1'>ClinicLib</h1></div>
@@ -75,7 +75,7 @@ function DoctorsDetails() {
       </Modal>
 
 </>
-   
+
 
     </div>
   );
