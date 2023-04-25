@@ -49,8 +49,8 @@ function Contact() {
                 >
                   <TileLayer url="https://api.maptiler.com/maps/basic-v2/256/{z}/{x}/{y}.png?key=LjeASTEOm5W62yk97NZq" />
                   <Marker position={position} icon={markerIcon}>
-                    <Popup><strong>
-                    Weiskopffstraße 16, 12459 Berlin</strong>
+                    <Popup>
+                    Weiskopffstraße 16, 12459 Berlin
                     <br /> <strong>WBS Coding School.</strong>
                     </Popup>
                   </Marker>
