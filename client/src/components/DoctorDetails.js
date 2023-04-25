@@ -19,7 +19,7 @@ function DoctorsDetails() {
 
     <div className='container'>
         <br/>
-        <div className="col-sm-12 green-top"><h1 className='text-center my-3'><strong>Get to know your doctor</strong></h1></div>
+        <div className="col-sm-12 green-top"><h1 className='text-center my-3'>Get to know your doctor</h1></div>
 
 
 
@@ -32,7 +32,7 @@ function DoctorsDetails() {
         <Card.Text>
         {doctor.description}
         </Card.Text>
-        <Card.Title><strong>Adress</strong></Card.Title>
+        <Card.Title>Adress</Card.Title>
         <Card.Text>
         {doctor.address}
         </Card.Text>
