@@ -1,3 +1,6 @@
+a{
+  text-decoration: none;
+}
 /* Media query  */
 @media only screen and (max-width: 768px) {
   #gigihero .input-group > .form-control,

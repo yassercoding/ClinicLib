@@ -12,7 +12,7 @@ function Footer() {
   return (
     <footer id="footer">
       <div className="container">
-        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 align-items-center">
+        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-5 pt-4 pb-2 align-items-center">
           <div className="col-lg-4 col-md-8 col-xs-12 mb-3">
           <Link to="/">
             <img src={Logo} alt="Logo" className="logo-footer" width="" height="" />
@@ -53,7 +53,7 @@ function Footer() {
       {/* <hr /> */}
 
       <div className="container">
-        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5">
+        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-5 pt-5 pb-2">
           <div className="col-lg-4 col-md-6 col-xs-12 mb-3">
           <h4 className= "mb-4">QUICK NAVIGATION</h4>
             <ul className="nav flex-column">

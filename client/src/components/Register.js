@@ -63,6 +63,10 @@ function Register({ setIsLoggedin }) {
         </Form.Text>
       </Form.Group>
 
+      <Form.Group className="mb-3" controlId="formBasicCheckbox">
+        <Form.Check type="checkbox" label="I want to subcribe to ClinicLib newsletter" />
+      </Form.Group>
+
       <Form.Group className="mb-3" controlId="formBasicPassword">
         <Form.Label>Password</Form.Label>
         {error.password && <p className="text-danger">{error.password.message}</p>}

@@ -14,11 +14,11 @@ function Clinics() {
   }, []);
 
   return (
-    
-    
+
+
     <div className='container'>
         <h1 className='text-center my-3'> Clinics</h1>
-        
+
       {clinics.map((clinic) => (
 
 <>
@@ -41,10 +41,10 @@ function Clinics() {
         <Card.Title>Phone</Card.Title>
         <Card.Text>
         {clinic.telNumber}
-        
+
         </Card.Text>
-        < Button variant="success" href={clinic.url} target='_blank'>Visit clinic's website</Button>
-        
+        < Button variant="success" href={clinic.url} target='_blank'><strong>Visit clinic's website</strong></Button>
+
       </Card.Body>
       <Link
        to={`/clinics/${clinic._id}`}
