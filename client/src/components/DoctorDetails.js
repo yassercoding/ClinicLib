@@ -15,34 +15,34 @@ function DoctorsDetails() {
   }, []);
 
   return (
-    
-    
+
+
     <div className='container'>
         <br/>
-        <div className="col-sm-12 green-top"><h1 className='text-center my-3'>Get to know your doctor</h1></div>
-        
-      
+        <div className="col-sm-12 green-top"><h1 className='text-center my-3'><strong>Get to know your doctor</strong></h1></div>
+
+
 
 <>
 <Card id='gigidoctors'>
       <Card.Header><h2 className=' my-3'>{doctor.name}</h2></Card.Header>
-      
+
       <Card.Body>
         <Card.Title>Specialty - {doctor.specialty}</Card.Title>
         <Card.Text>
         {doctor.description}
         </Card.Text>
-        <Card.Title>Adress</Card.Title>
+        <Card.Title><strong>Adress</strong></Card.Title>
         <Card.Text>
         {doctor.address}
         </Card.Text>
         <Card.Title>Phone</Card.Title>
         <Card.Text>
         {doctor.telNumber}
-        
+
         </Card.Text>
         < Button variant="success" href={doctor.url} target='_blank'>Book an appointment</Button>
-        
+
       </Card.Body>
       <Card.Img className="img-thumbnail" src={ doctor.image} />
       <div className="col-sm-12 green-top"><h1 className='text-center my-1'>ClinicLib</h1></div>
@@ -50,7 +50,7 @@ function DoctorsDetails() {
 <br/>
 
 </>
-   
+
 
     </div>
   );
