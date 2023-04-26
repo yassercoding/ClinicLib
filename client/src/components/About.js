@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 function About() {
   return (
     <Container>
-    
+
       <header class="masthead">
         <p class="masthead-intro"></p>
         <h1 class="masthead-heading">
