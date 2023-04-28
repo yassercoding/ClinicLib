@@ -15,7 +15,7 @@ function About() {
         <h1><strong>About us</strong></h1>
         <p>
         At <strong>Clinclib,</strong> we are passionate about improving the health and well-being of people around the world.
-         As a leading medical company, we specialize in [medical devices/ pharmaceuticals/ healthcare IT/ healthcare services] and work tirelessly to develop innovative solutions that meet the needs of patients,
+         As a leading medical company, we specialize in [<strong>medical devices/ pharmaceuticals/ healthcare IT/ healthcare services</strong>] and work tirelessly to develop innovative solutions that meet the needs of patients,
          healthcare providers, and payers.
 
         </p>
