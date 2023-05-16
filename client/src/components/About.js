@@ -12,7 +12,7 @@ function About() {
       </header>
 
       <section class="introduction-section">
-        <h1><strong>About us</strong></h1>
+        <h1>About us</h1>
         <p>
         At Clinclib, we are passionate about improving the health and well-being of people around the world.
          As a leading medical company, we specialize in [medical devices/ pharmaceuticals/ healthcare IT/ healthcare services] and work tirelessly to develop innovative solutions that meet the needs of patients,
@@ -33,7 +33,7 @@ function About() {
 
       <section class="questions-section">
         <h1>
-          <strong>Christian & Kevin</strong>
+          <strong>Christian and Kevin</strong>
         </h1>
 
         <p>
