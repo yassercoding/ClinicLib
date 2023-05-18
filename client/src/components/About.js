@@ -43,7 +43,7 @@ function About() {
         </p>
 
         <h1>
-          <strong>Yasser & Zakaria</strong>
+          <strong>Yasser and Zakaria</strong>
         </h1>
         <p>
           Our  <strong>head of medical Yasser</strong> is a very experienced doctor with over 20 years of experience under his belt,
