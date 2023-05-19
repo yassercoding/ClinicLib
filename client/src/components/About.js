@@ -46,8 +46,8 @@ function About() {
           <strong>Yasser and Zakaria</strong>
         </h1>
         <p>
-          Our  <strong>head of medical Yasser</strong> is a very experienced doctor with over 20 years of experience under his belt,
-          him and our <strong>board director</strong> and <strong>CEO Zakaria</strong>  founded this company from the ground up with with years of hard work and dedication to make this company the very best
+          Our <strong>head of medical Yasser</strong> is a very experienced doctor with over 20 years of experience under his belt,
+          Him and our <strong>board director</strong> and <strong>CEO Zakaria</strong>  founded this company from the ground up with with years of hard work and dedication to make this company the very best
         </p>
       </section>
     </Container>
