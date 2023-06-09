@@ -4,6 +4,7 @@ import Hero from './Hero';
 import DoctorsCards from './DoctorsCards';
 import ClinicsCards from './ClinicsCards';
 
+
 function Home() {
   return (
     <div>
@@ -11,6 +12,8 @@ function Home() {
     <DoctorsCards />
     <NewsCont1 />
     <ClinicsCards />
+    
+    
     </div>
   )
 }

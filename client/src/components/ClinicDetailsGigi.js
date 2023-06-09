@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/esm/Button';
 import { useState, useEffect } from "react";
 import axios from "../axiosinstance";
 import { useParams } from 'react-router-dom';
+import { Telephone,GeoAlt, ClipboardPlus } from 'react-bootstrap-icons';
 
 
 
@@ -32,20 +33,20 @@ function ClinicDetailsGigi() {
       <Card.Header><h2 className=' my-3'>{clinic.name}</h2></Card.Header>
       
       <Card.Body>
-        <Card.Title>Specialty - {clinic.specialty}</Card.Title>
+        <Card.Title><ClipboardPlus color="green" /> Specialty - {clinic.specialty}</Card.Title>
         <Card.Text>
         {clinic.description}
         </Card.Text>
-        <Card.Title>Adress</Card.Title>
+        <Card.Title> <GeoAlt color="green" /> Adress</Card.Title>
         <Card.Text>
         {clinic.address}
         </Card.Text>
-        <Card.Title>Phone</Card.Title>
+        <Card.Title><Telephone color="green" /> Phone number</Card.Title>
         <Card.Text>
         {clinic.telNumber}
         
         </Card.Text>
-        < Button variant="success" href={clinic.url} target='_blank'>Visit clinic's website</Button>
+        < Button variant="success" href={clinic.url} target='_blank'> Visit clinic's website</Button>
         
       </Card.Body>
       <Card.Img className="img-thumbnail" src={ clinic.image} />
