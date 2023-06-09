@@ -44,7 +44,9 @@ function Footer() {
 
             <h4>Stay Connected</h4>
             <ul className="nav flex-column">
-              <li className="nav-item mb-2"><strong>Join our newsletter and stay up-to-date with all the latest news and updates in the world of healthcare.</strong>
+
+              <li className="nav-item mb-2">Join our newsletter and stay up-to-date with all the latest news and updates in the world of healthcare.
+
               </li>
             </ul>
           </div>
