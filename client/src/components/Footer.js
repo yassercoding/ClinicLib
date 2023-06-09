@@ -86,7 +86,7 @@ function Footer() {
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
 
-              With Cliniclib, you can easily book appointments and live consultations with your preferred doctors and clinics. Whether you need a routine checkup, a specialist consultation, or urgent medical attention, Cliniclib's user - friendly interface makes it easy to find and book the care you need, when you need it.
+              With Cliniclib, you can easily book appointments and live consultations with your preferred doctors and clinics. Whether you need a routine checkup, a specialist consultation, or urgent medical attention, Cliniclib's user-friendly interface makes it easy to find and book the care you need, when you need it.
               </li>
               <Link className="nav-item mb-2" to="/about">
                 ABOUT US
