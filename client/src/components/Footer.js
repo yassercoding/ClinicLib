@@ -44,7 +44,7 @@ function Footer() {
 
             <h4>Stay Connected</h4>
             <ul className="nav flex-column">
-              <li className="nav-item mb-2">Join our newsletter and stay up-to-date with all the latest news and updates in the world of healthcare. 
+              <li className="nav-item mb-2">Join our newsletter and stay up-to-date with all the latest news and updates in the world of healthcare.
               </li>
             </ul>
           </div>
@@ -60,7 +60,7 @@ function Footer() {
             <Link className="nav-item mb-2" to="/">
                 HOME
               </Link>
-            
+
               <Link className="nav-item mb-2" to="/clinics">
                 CLINICS
                 </Link>
@@ -86,7 +86,7 @@ function Footer() {
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
 
-              With Cliniclib, you can easily book appointments and live consultations with your preferred doctors and clinics. Whether you need a routine checkup, a specialist consultation, or urgent medical attention, Cliniclib's user-friendly interface makes it easy to find and book the care you need, when you need it.
+              With Cliniclib, you can easily book appointments and live consultations with your preferred doctors and clinics. Whether you need a routine checkup, a specialist consultation, or urgent medical attention, Cliniclib's user - friendly interface makes it easy to find and book the care you need, when you need it.
               </li>
               <Link className="nav-item mb-2" to="/about">
                 ABOUT US
@@ -107,7 +107,7 @@ function Footer() {
 
             <ul className="list-unstyled d-flex">
 
-            
+
               <li>
                 <a
                   href="https://www.linkedin.com/"
@@ -147,7 +147,7 @@ function Footer() {
               </span>
             </div>
             <p className="nav justify-content-end ">
-            The Dream Team 
+            The Dream Team
             </p>
 
           </div>
