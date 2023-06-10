@@ -27,20 +27,20 @@ function Contact() {
               <div className="info">
                 <div className="address">
                   <i className="bi bi-geo-alt"></i>
-                  <h4>Location:</h4>
-                  <p>Weiskopffstraße 16, 12459 Berlin</p>
+                  <h4><strong>Location:</strong></h4>
+                  <p><strong>Weiskopffstraße 16, 12459 Berlin</strong></p>
                 </div>
 
                 <div className="email">
                   <i className="bi bi-envelope"></i>
-                  <h4>Email:</h4>
-                  <p>Clinclib@drugs.com</p>
+                  <h4><strong>Email:</strong></h4>
+                  <p><strong>Clinclib@drugs.com</strong></p>
                 </div>
 
                 <div className="phone">
                   <i className="bi bi-phone"></i>
                   <h4>Call:</h4>
-                  <p>+49 177 don't call me 000</p>
+                  <p><strong>+49 177 don't call me 000</strong></p>
                 </div>
                 <MapContainer
                   center={position}
@@ -51,7 +51,7 @@ function Contact() {
                   <Marker position={position} icon={markerIcon}>
                     <Popup>
                     Weiskopffstraße 16, 12459 Berlin
-                    <br /> WBS Coding School.
+                    <br /> <strong>WBS Coding School.</strong>
                     </Popup>
                   </Marker>
                 </MapContainer>
@@ -109,7 +109,7 @@ function Contact() {
                   <div className="loading">Loading</div>
                   <div className="error-message"></div>
                   <div className="sent-message">
-                    Your message has been sent. Thank you!
+                    <strong>Your message has been sent. Thank you!</strong>
                   </div>
                 </div>
                 <div className="text-center">

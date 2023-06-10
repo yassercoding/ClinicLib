@@ -12,7 +12,7 @@ function Footer() {
   return (
     <footer id="footer">
       <div className="container">
-        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 align-items-center">
+        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-5 pt-4 pb-2 align-items-center">
           <div className="col-lg-4 col-md-8 col-xs-12 mb-3">
           <Link to="/">
             <img src={Logo} alt="Logo" className="logo-footer" width="" height="" />
@@ -44,7 +44,9 @@ function Footer() {
 
             <h4>Stay Connected</h4>
             <ul className="nav flex-column">
+
               <li className="nav-item mb-2">Join our newsletter and stay up-to-date with all the latest news and updates in the world of healthcare.
+
               </li>
             </ul>
           </div>
@@ -53,7 +55,7 @@ function Footer() {
       {/* <hr /> */}
 
       <div className="container">
-        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5">
+        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-5 pt-5 pb-2">
           <div className="col-lg-4 col-md-6 col-xs-12 mb-3">
           <h4 className= "mb-4">QUICK NAVIGATION</h4>
             <ul className="nav flex-column">
@@ -86,7 +88,7 @@ function Footer() {
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
 
-              With Cliniclib, you can easily book appointments and live consultations with your preferred doctors and clinics. Whether you need a routine checkup, a specialist consultation, or urgent medical attention, Cliniclib's user-friendly interface makes it easy to find and book the care you need, when you need it.
+              <strong>With Cliniclib, you can easily book appointments and live consultations with your preferred doctors and clinics. Whether you need a routine checkup, a specialist consultation, or urgent medical attention, Cliniclib's user-friendly interface makes it easy to find and book the care you need, when you need it.</strong>
               </li>
               <Link className="nav-item mb-2" to="/about">
                 ABOUT US
