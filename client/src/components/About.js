@@ -38,7 +38,7 @@ function About() {
 
         <p>
           Dr . Christian and Dr. Kevin are highly skilled and experienced physicians who are dedicated to providing the highest quality of care to their patients.
-          As physicians,<br/>Dr.Christian and Dr. Kevin are known for their compassion, expertise, and commitment to improving the health and well-being of their patients.<br/>
+          As physicians,<br/>Dr.Christian and Dr. Kevin are known  for their compassion, expertise, and commitment to improving the health and well-being of their patients.<br/>
           Dr. Christian and Dr.Kevin bring a wealth of knowledge and experience to their practice, and are respected members of the medical community.<br/>
         </p>
 
