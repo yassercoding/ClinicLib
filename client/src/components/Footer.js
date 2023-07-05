@@ -42,7 +42,7 @@ function Footer() {
 
           <div className="col-lg-4 col-md-8 col-xs-12 mb-3">
 
-            <h4>Stay Connected</h4>
+            <h4><strong>Stay Connected</strong></h4>
             <ul className="nav flex-column">
 
               <li className="nav-item mb-2">Join our newsletter and stay up-to-date with all the latest news and updates in the world of healthcare.
