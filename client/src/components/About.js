@@ -22,7 +22,7 @@ function About() {
       </section>
 
       <section class="location-section">
-        <h1>Our Team</h1>
+        <h1><strong>Our Team</strong></h1>
         <p>
           Our team is made up of passionate people that are eager to change the world and give a hand to people in need
         </p>
