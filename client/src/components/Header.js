@@ -25,7 +25,7 @@ function Header({ isLoggedin, setIsLoggedin }) {
         <>
           {user ? (
             <div className="header-user">
-              <p>Hello: {user.username}</p>
+              <p><strong>Hello</strong>: {user.username}</p>
               <button onClick={handleLogout}>Logout</button>
             </div>
           ) : (
