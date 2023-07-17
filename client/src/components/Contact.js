@@ -18,7 +18,7 @@ function Contact() {
         <div className="container mt-4">
           <div className="section-title">
             <h2>
-              <em><strong>Contact</strong></em>
+              <em>Contact</em>
             </h2>
           </div>
 
